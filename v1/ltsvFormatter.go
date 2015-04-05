@@ -19,6 +19,8 @@ func NewLTSVFormatter(name string) *LTSVFormatter {
 	var buildKV = func(level string) string {
 		buf := pool.Get()
 		defer pool.Put(buf)
+
+		buf.WriteString(LTSVSeparator)
 		buf.WriteString("name:")
 		buf.WriteString(name)
 
