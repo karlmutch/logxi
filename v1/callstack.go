@@ -99,7 +99,7 @@ func (ci *frameInfo) String(color string, sourceColor string) string {
 	buf.WriteString(strconv.Itoa(ci.lineno))
 	buf.WriteString(")")
 
-	if ci.contextLines == -1 {
+	if contextLines == -1 {
 		return buf.String()
 	}
 	buf.WriteString("\n")
@@ -120,17 +120,26 @@ func (ci *frameInfo) String(color string, sourceColor string) string {
 	}
 
 	for _, li := range ci.context {
+		if !disableColors {
+			// need to reset here.  If source is set to default color, then the message
+			// color will bleed over into the source context lines
+			buf.WriteString(ansi.Reset)
+		}
 		var format string
 		format = fmt.Sprintf("%%s%%%dd:  %%s\n", linenoWidth)
 
 		if li.lineno == ci.lineno {
-			buf.WriteString(color)
-			if ci.contextLines > 2 {
+			if !disableColors {
+				buf.WriteString(color)
+			}
+			if contextLines > 0 {
 				format = fmt.Sprintf("%%s=> %%%dd:  %%s\n", linenoWidth)
 			}
 		} else {
-			buf.WriteString(sourceColor)
-			if ci.contextLines > 2 {
+			if !disableColors {
+				buf.WriteString(sourceColor)
+			}
+			if contextLines > 0 {
 				// account for "=> "
 				format = fmt.Sprintf("%%s%%%dd:  %%s\n", linenoWidth+3)
 			}
