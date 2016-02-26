@@ -348,7 +348,7 @@ func (hd *HappyDevFormatter) Format(writer io.Writer, level int, msg string, arg
 		if level == LevelTrace || (level == LevelWarn && !hasCallStack) {
 			// gets rid of "in "
 			idx := strings.IndexRune(context, 'n')
-			hd.set(buf, "in", context[idx+2:], color)
+			hd.set(buf, "in", context[idx+2:], theme.Value)
 		} else {
 			buf.WriteRune('\n')
 			if !disableColors {
