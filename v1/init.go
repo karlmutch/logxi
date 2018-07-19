@@ -24,6 +24,26 @@ func badKeyAtIndex(i int) string {
 // DefaultLogLog is the default log for this package.
 var DefaultLog Logger
 
+// DisableCallstack will deactivate call stacks when Warnings
+// or more severe logs occur
+//
+func DisableCallstack() (prev bool) {
+	prev = disableCallstack
+	disableCallstack = true
+
+	return prev
+}
+
+// EnableCallstack will activate a simple call stack when Warnings
+// or more severe logs occur
+//
+func EnableCallstack() (prev bool) {
+	prev = disableCallstack
+	disableCallstack = false
+
+	return prev
+}
+
 // Suppress supresses logging and is useful to supress output in
 // in unit tests.
 //
