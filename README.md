@@ -1,5 +1,5 @@
 
-![demo](https://github.com/karlmutch/logxi/raw/master/images/demo.gif)
+![demo](https://github.com/karlmutch/logxi/raw/main/images/demo.gif)
 
 # logxi
 
