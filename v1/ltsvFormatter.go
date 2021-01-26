@@ -53,7 +53,7 @@ func (lf *LTSVFormatter) set(buf bufferWriter, key string, val interface{}) {
 		buf.WriteString(err.Error())
 		buf.WriteString(LTSVSeparator)
 
-		buf.WriteString(CallStackKey)
+		buf.WriteString(KeyMap.CallStack)
 		buf.WriteString(":")
 		buf.WriteString(strconv.Quote(string(debug.Stack())))
 
