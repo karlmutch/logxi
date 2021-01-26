@@ -148,14 +148,14 @@ func (ci *frameInfo) String(color string, sourceColor string) string {
 // parseDebugStack parases a stack created by debug.Stack()
 //
 // This is what the string looks like
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:45 (0x5fa70)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:45 (0x5fa70)
 // 	(*JSONFormatter).writeError: jf.writeString(buf, err.Error()+"\n"+string(debug.Stack()))
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:82 (0x5fdc3)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:82 (0x5fdc3)
 // 	(*JSONFormatter).appendValue: jf.writeError(buf, err)
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:109 (0x605ca)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:109 (0x605ca)
 // 	(*JSONFormatter).set: jf.appendValue(buf, val)
 // ...
-// /Users/mgutz/goroot/src/runtime/asm_amd64.s:2232 (0x38bf1)
+// /Users/karlmutch/goroot/src/runtime/asm_amd64.s:2232 (0x38bf1)
 // 	goexit:
 func parseDebugStack(stack string, skip int, ignoreRuntime bool) []*frameInfo {
 	frames := []*frameInfo{}
@@ -209,14 +209,14 @@ func parseDebugStack(stack string, skip int, ignoreRuntime bool) []*frameInfo {
 // parseDebugStack parases a stack created by debug.Stack()
 //
 // This is what the string looks like
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:45 (0x5fa70)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:45 (0x5fa70)
 // 	(*JSONFormatter).writeError: jf.writeString(buf, err.Error()+"\n"+string(debug.Stack()))
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:82 (0x5fdc3)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:82 (0x5fdc3)
 // 	(*JSONFormatter).appendValue: jf.writeError(buf, err)
-// /Users/mgutz/go/src/github.com/mgutz/logxi/v1/jsonFormatter.go:109 (0x605ca)
+// /Users/karlmutch/go/src/github.com/karlmutch/logxi/v1/jsonFormatter.go:109 (0x605ca)
 // 	(*JSONFormatter).set: jf.appendValue(buf, val)
 // ...
-// /Users/mgutz/goroot/src/runtime/asm_amd64.s:2232 (0x38bf1)
+// /Users/karlmutch/goroot/src/runtime/asm_amd64.s:2232 (0x38bf1)
 // 	goexit:
 func trimDebugStack(stack string) string {
 	buf := pool.Get()

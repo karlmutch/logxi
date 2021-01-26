@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Sirupsen/logrus"
-	"github.com/mgutz/logxi/v1"
+	log "github.com/karlmutch/logxi/v1"
+	"github.com/sirupsen/logrus"
 	"gopkg.in/inconshreveable/log15.v2"
 )
 
