@@ -1,5 +1,5 @@
 
-![demo](https://github.com/mgutz/logxi/raw/master/images/demo.gif)
+![demo](https://github.com/karlmutch/logxi/raw/master/images/demo.gif)
 
 # logxi
 
@@ -15,19 +15,22 @@ logger built for speed and happy development.
     number and callstack.
 *   Efficient. Has level guards to avoid cost of building complex arguments.
 
+This package is a fork from https://github.com/mgutz/logxi. It was forked to
+enable adoption of go modules.  This software is largely the work of
+Mario Gutierrez and he is the Copyright holder.
 
 ### Requirements
 
-    Go 1.3+
+    Go 1.11+
 
 ### Installation
 
-    go get -u github.com/mgutz/logxi/v1
+    go get -u github.com/karlmutch/logxi/v1
 
 ### Getting Started
 
 ```go
-import "github.com/mgutz/logxi/v1"
+import "github.com/karlmutch/logxi/v1"
 
 // create package variable for Logger interface
 var logger log.Logger
