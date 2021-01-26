@@ -9,6 +9,7 @@ import (
 
 	"github.com/mattn/go-colorable"
 	"github.com/mgutz/ansi"
+
 	do "gopkg.in/godo.v2"
 )
 

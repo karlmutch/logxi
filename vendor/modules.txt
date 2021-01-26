@@ -18,9 +18,6 @@ github.com/mattn/go-isatty
 # github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
 ## explicit
 github.com/mgutz/ansi
-# github.com/mgutz/logxi v0.0.0-00010101000000-000000000000 => ./
-## explicit
-github.com/mgutz/logxi/v1
 # github.com/mgutz/minimist v0.0.0-20151219120022-39eb8cf573ca
 ## explicit
 github.com/mgutz/minimist
@@ -60,6 +57,7 @@ gopkg.in/godo.v2/watcher/fswatch
 # gopkg.in/inconshreveable/log15.v2 v2.0.0-20200109203555-b30bc20e4fd1
 ## explicit
 gopkg.in/inconshreveable/log15.v2
+# gopkg.in/stretchr/testify.v1 v1.2.2
+## explicit
 # gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 gopkg.in/yaml.v3
-# github.com/mgutz/logxi => ./
