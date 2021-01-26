@@ -20,5 +20,3 @@ require (
 	gopkg.in/godo.v2 v2.0.9
 	gopkg.in/inconshreveable/log15.v2 v2.0.0-20200109203555-b30bc20e4fd1
 )
-
-replace github.com/mgutz/logxi => ./
