@@ -1,12 +1,8 @@
-# github.com/MichaelTJones/walk v0.0.0-20161122175330-4748e29d5718
-## explicit
 # github.com/davecgh/go-spew v1.1.1
 github.com/davecgh/go-spew/spew
 # github.com/go-stack/stack v1.8.0
 ## explicit
 github.com/go-stack/stack
-# github.com/howeyc/gopass v0.0.0-20190910152052-7cb4b85ec19c
-## explicit
 # github.com/magefile/mage v1.10.0
 github.com/magefile/mage/mg
 github.com/magefile/mage/sh
@@ -19,14 +15,6 @@ github.com/mattn/go-isatty
 # github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
 ## explicit
 github.com/mgutz/ansi
-# github.com/mgutz/minimist v0.0.0-20151219120022-39eb8cf573ca
-## explicit
-# github.com/mgutz/str v1.2.0
-## explicit
-# github.com/mgutz/to v1.0.0
-## explicit
-# github.com/nozzle/throttler v0.0.0-20180817012639-2ea982251481
-## explicit
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
 # github.com/sirupsen/logrus v1.8.0
@@ -35,17 +23,11 @@ github.com/sirupsen/logrus
 # github.com/stretchr/testify v1.7.0
 ## explicit
 github.com/stretchr/testify/assert
-# golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83
-## explicit
 # golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# gopkg.in/godo.v2 v2.0.9
-## explicit
 # gopkg.in/inconshreveable/log15.v2 v2.0.0-20200109203555-b30bc20e4fd1
 ## explicit
 gopkg.in/inconshreveable/log15.v2
-# gopkg.in/stretchr/testify.v1 v1.2.2
-## explicit
 # gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 gopkg.in/yaml.v3
