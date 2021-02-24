@@ -39,7 +39,7 @@ func (ci *frameInfo) readSource(contextLines int) error {
 		disableCallstack = true
 		return err
 	}
-	defer f.Close()
+	defer _ = f.Close()
 
 	lineno := 1
 	scanner := bufio.NewScanner(f)
